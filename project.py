@@ -173,6 +173,8 @@ def EditTransaksi():
             RewriteFile()  
             print("Berhasil diedit\n")
             DisplayStartingMenu()
+        else:
+            DisplayStartingMenu()
     else:
         print("Nomor Transaksi tidak tercatat. Mohon cek lagi input atau input data baru")
         DisplayStartingMenu()
@@ -192,6 +194,8 @@ def DeleteTransaksi():
                     nomorTransaksiList.remove(pilihan)  
             RewriteFile() 
             print("Berhasil dihapus\n")
+            DisplayStartingMenu()
+        else:
             DisplayStartingMenu()
     else:
         print("Nomor Transaksi tidak tercatat. Mohon cek lagi input atau input data baru")
